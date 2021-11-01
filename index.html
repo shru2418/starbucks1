@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>StarBucks landing page</title>
+        <link
+  rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="images/logo.png" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="https://www.starbucks.com/">Home</a></li>
+                    <li><a href="https://www.starbucks.com/menu">Menu</a></li>
+                    <li><a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program">What's New</a></li>
+                    <li><a href="https://customerservice.starbucks.com/app/contact/ask/session/L3RpbWUvMTYzNTc2NTM0Mi9nZW4vMTYzNTc2NTM0Mi9zaWQvZlV4bSU3RWFBJTdFJTdFMFBZQ19YcDZuNjhrMEE3S0lMMFBoRTNoZENlMVdzM3FmWXdoQXZTdFRwWndMdE54YzNuTHdad01xeV8lN0VHbF9ZWjRDWjN4M1kxczlKdFoySVlJcGU0eGppcllRWHRvTGtRTyU3RXVlN2pEQ2dvMnd4ZyUyMSUyMQ%3D%3D">Contact</a></li>
+                    </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2 style="color:rgb(39, 148, 30);">Keep calm and love StarBucks</h2>
+                    <p style="color:black;">FREE COFFEE IS A TAP AWAY</p>
+                    
+                    <a href="https://www.starbucks.com/account/create">join us</a>
+                </div>
+
+                <div class="imageBox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="images/img1.png"></div>
+                          <div class="swiper-slide"><img src="images/img2.png"></div>
+                          <div class="swiper-slide"><img src="images/img3.png"></div>
+                          <div class="swiper-slide"><img src="images/thumb1.png"></div>
+                          <div class="swiper-slide"><img src="images/thumb2.png"></div>
+                          <div class="swiper-slide"><img src="images/thumb3.png"></div>
+                              
+                            
+                          
+                        </div>
+                        
+                      </div>
+                  
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Starbucks/"><img src="images/facebook.png"></a></li>
+                <li><a href="https://twitter.com/starbucks/"><img src="images/twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/starbucks/"><img src="images/instagram.png"></a></li>
+            </ul>
+        </section>
+        
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+  </script>
+    </body>
+</html>
